@@ -18,13 +18,13 @@ jobs:
           kernel-url: https://github.com/qiratdahaf/UT-kernel-volla-mt6768
           kernel-dir: kernel-4.14
           kernel-branch: halium-11.0
-          config: defconfig
+          config: x6812_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
           ksu-version: main
-          android-version: 12
+          android-version: 11
           aosp-clang-version: r383902b
           disable-lto: true
           anykernel3: true
