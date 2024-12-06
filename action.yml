@@ -11,15 +11,14 @@ jobs:
       - name: Build
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/physwizz/a125m-S-u4
+          kernel-url: https://github.com/physwizz/A235-U-s4
           kernel-branch: main
-          config: cas_defconfig
+          config: sdm6225_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          android-version: 13
+          android-version: 14
           aosp-clang-version: r383902
-
   ksu:
     description: 'KernelSU function support'
     required: false
