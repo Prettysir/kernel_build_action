@@ -15,8 +15,8 @@ inputs:
   vendor:
     required: false
     default: false
-  vendor-url:https://github.com/mrx7014/android_vendor_samsung_a23
-    description: 'Kernel Vendor Source Url'
+  vendor-url:
+    description: 'https://github.com/mrx7014/android_vendor_samsung_a23'
     required: false
   kernel-dir:
     required: false
@@ -39,7 +39,7 @@ inputs:
     required: true
     default: arm64
   android-version:
-    description: 'Android version.'
+    description: '14.'
     required: true
     default: 14
   ksu:
