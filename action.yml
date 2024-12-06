@@ -1,4 +1,4 @@
-name: 'Android Kernel Build Action'
+name: Kernel Build 
 description: "A action to built android kernel."
 
 branding:
@@ -6,8 +6,8 @@ branding:
   color: 'blue'
 
 inputs:
-  kernel-url:https://github.com/MrRob0-X/Nethunter_kernel_samsung_a23
-    description: 'Kernel Source Url'
+  kernel-url:
+    description: 'https://github.com/mrx7014/android_vendor_samsung_a23'
     required: true
   depth:
     required: false
