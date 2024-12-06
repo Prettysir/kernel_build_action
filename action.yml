@@ -1,47 +1,25 @@
-name: Kernel Build 
-description: "A action to built android kernel."
+name: CI
 
-branding:
-  icon: 'activity'
-  color: 'blue'
+on:
+  workflow_dispatch:
 
-inputs:
-  kernel-url:
-    description: https://github.com/physwizz/A235-U-s4
-    required: true
-  depth:
-    required: false
-    default: 1
-  vendor:
-    required: false
-    default: false
-  vendor-url:
-    description: ''
-    required: false
-  kernel-dir:
-    required: false
-    default: kernel
-  vendor-dir:
-    required: false
-    default: vendor
-  kernel-branch: 
-    description: main
-    required: false
-    default: main
-  vendor-branch:
-    required: false
-    default: main
-  config:
-    description: 'build.config.sm6225'
-    required: true
-    default: defconfig
-  arch:
-    required: true
-    default: arm64
-  android-version:
-    description: 14
-    required: true
-    default: 12
+jobs:
+  build-kernel:
+    name: Build Kernel
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Build
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/physwizz/a125m-S-u4
+          kernel-branch: main
+          config: cas_defconfig
+          arch: arm64
+          aosp-gcc: true
+          aosp-clang: true
+          android-version: 13
+          aosp-clang-version: r383902
+
   ksu:
     description: 'KernelSU function support'
     required: false
