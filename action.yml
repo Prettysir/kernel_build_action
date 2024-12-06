@@ -18,7 +18,7 @@ jobs:
           kernel-url: https://github.com/physwizz/A235-U-s4
           kernel-dir: msm-4.19
           kernel-branch: main
-          config: sdm6225_defconfig
+          config: build.config.sm6225
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
