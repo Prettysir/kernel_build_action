@@ -7,7 +7,7 @@ branding:
 
 inputs:
   kernel-url:
-    description: 'https://github.com/MrRob0-X/Nethunter_kernel_samsung_a23'
+    description: https://github.com/physwizz/A235-U-s4
     required: true
   depth:
     required: false
@@ -24,8 +24,8 @@ inputs:
   vendor-dir:
     required: false
     default: vendor
-  kernel-branch:
-    description: 'stock-14'
+  kernel-branch: 
+    description: main
     required: false
     default: main
   vendor-branch:
@@ -39,9 +39,9 @@ inputs:
     required: true
     default: arm64
   android-version:
-    description: '14.'
+    description: 14
     required: true
-    default: 14
+    default: 12
   ksu:
     description: 'KernelSU function support'
     required: false
