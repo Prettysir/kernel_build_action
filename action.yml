@@ -16,7 +16,7 @@ inputs:
     required: false
     default: false
   vendor-url:
-    description: 'https://github.com/mrx7014/android_vendor_samsung_a23'
+    description: ''
     required: false
   kernel-dir:
     required: false
