@@ -7,7 +7,7 @@ branding:
 
 inputs:
   kernel-url:
-    description: 'https://github.com/mrx7014/android_vendor_samsung_a23'
+    description: 'https://github.com/MrRob0-X/Nethunter_kernel_samsung_a23'
     required: true
   depth:
     required: false
